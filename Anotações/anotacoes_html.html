@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--botão de voltar ao menu-->
+
+    <p style="text-align: center;"><a  class="voltar"  href="menu_principal.html">Voltar ao menu</a></p>
+
+    <!--inicio da pagina-->
+    <h1 id="topo" >FORMATAÇÕES DE TEXTO</h1>
+    <hr>
+    <h2>Como usar Negrito:</h2>
+    <h3>destaque com &lt;b&gt; (sem semantica):</h3>
+    <p>Palavras com <b>destaque</b></p>
+    <h3>destaque com &lt;strong&gt; (com semantica):</h3>
+    <p>palavras em <strong>destaque</strong></p>
+
+    <h2>Como usar Itálico:</h2>
+    <h3>Aplicando&lt;i&gt; (sem semantica)</h3>
+    <p>Usando italico <i> nesse texto</i></p>
+    <h3>Usando &lt;em&gt; (com semantica)</h3>
+    <p>Aplicando italico com semantica <em>nesse text</em>o</p>
+
+    <!--MARCAÇÃO DE TEXTOS-->
+    <h2>Como marcar textos:</h2>
+    <h3>Aplicando &lt;mark&gt;</h3>
+    <p>Esse texto será <mark>marcado</mark></p>
+    <h3>Dentro do &lt;mark&gt; você pode mudar a cor com &lt;style&gt; (style="background-color:red")</h3>
+    <p>esse texto será <mark style="background-color:red">marcado</mark></p>
+
+    <!--TEXTOS INSERIDOS E DELETADOS-->
+    <h2>Textos inseridos e deletados</h2>
+    <h3>aplicando &lt;del&gt;:</h3>
+    <p>Preço do produto: <del>R$19,90</del></p>
+    <h3>Aplicando &lt;ins&gt;(ou "u"):</h3>
+    <p>Preço novo do produto: <ins>R$16,90</ins></p>
+
+    <!--TEXTOS SOBRESCRITOS E SUBSCRITOS-->
+    <h2>Textos sobreescritos e subscritos</h2>
+    <h3>Sobreescrevendo textos com &lt;sup&gt;:</h3>
+    <p>Para coisas do tipo: x<sup>20</sup>+3</p>
+    <h3>SUbescrevendo textos com &lt;sub&gt;:</h3>
+    <p>Para coisas do tipo: H<sub>2</sub>O</p>
+
+    <!--Tags para codigos-->
+    <h2>Textos em forma de codigo</h2>
+    <h3>Com a tag &lt;code&gt; voce deixa textos com aspecto de codigos:</h3>
+    <p>O comando <code>document.getElementByid("teste")</code> é mais legivel para codigos</p>
+    <h3>Com a tag &lt;pre&gt; o site respeita a identação escrita:</h3>
+    <p>
+    <pre><code>
+num=int("digite um numero")
+if num>4:
+    print("O numero e maior que 4")
+else:
+print("O numero não é maior que 4")
+        </code></pre>
+    </p>
+
+    <!--CITAÇÕES-->
+    <h2>Citações e abreviações:</h2>
+    <h3>Usando a tag &lt;q&gt; você torna o texto uma citação:</h3>
+
+    <P>Como diria um sábio: <q>O computador é um burro muito rápido</q></P>
+    <h3>Voce tambem pode usar um &lt;blockquote&gt; tornando a citação um bloco de texto em destaque, ppodendo
+        referencialo dentro da tag com cite="link do autor":</h3>
+    <p>
+    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis minus at pariatur. Cupiditate dolor
+        molestias tempore! Itaque, aut eos saepe odit cumque commodi officia. Inventore est laboriosam ipsa voluptatum
+        nulla.</blockquote>
+    </p>
+
+    <!--ABREVIAÇÕES-->
+    <h2>Abreviações:</h2>
+    <h3>Voce ppode esppecificar que alguma palavra é uma abreviação usando a tag &lt;abbr&gt;:</h3>
+    <p>Estudo de <abbr title="HyperText Markup language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>
+    </p>
+<br>
+
+    <!--CRIANDO LISTAS-->
+    <h1>CRIANDO LISTAS</h1>
+    <hr>
+
+    <!--LISTAS ORDENADAS-->
+    <h2>Listas ordenadas:</h2>
+    <h3>Com a tag &lt;ol&gt; você cria uma lista ordenada, e os itens da lista são determinados por &lt;li&gt;,com as
+        tags type="tipo de ordem(1,I,i,A,a)" start="por qual começa"</h3>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <!--LISTAS NAO ORDENADAS-->
+    <h2>Listas não ordenadas:</h2>
+    <h3>Com a tag &lt;ul&gt; você cria uma lista não ordenada, e os itens da lista são determinados por &lt;li&gt;, com
+        a tag type="tipo de topico(disc,circle,square)"</h3>
+    <ul type="circle">
+        <li>item </li>
+        <li>item </li>
+        <li>item </li>
+        <li>item </li>
+    </ul>
+    <!--LISTAS DE DEFINIÇÃO-->
+    <h2>Listas de definição:</h2>
+    <h3>Com a tag &lt;dl&gt; é possível criar uma lista de definição, sendo determinada pot &lt;dt&gt;(termo de
+        definição) e &lt;dd&gt;(descrição de definição)</h3>
+    <h4>Linguagens front-end:</h4>
+    <dl>
+        <dt> HTML:
+        <dd>
+            Uma linguagem de marcação de texto utilizada em navegadores para criar sites...
+        </dd>
+        </dt>
+        <dt> CSS:
+        <dd>
+            Uma linguagem que é usada para estilizar os textos criados em <abbr
+                title="Hypertext Markup Language">HTML</abbr>...
+        </dd>
+        </dt>
+        <dt>
+            JavaSript:
+        <dd>
+            Linguagem de programação usada para criar interatividade em um site
+        </dd>
+        </dt>
+    </dl>
+
+    <!--JUNTANDO LISTAS-->
+    <h2>Juntando listas:</h2>
+    <h3>Voce pode misturar listas e criar listas dentro de outras:</h3>
+    <h4>Mehores comidas:</h4>
+    <ol>
+        <li> brasileiras
+            <ul type="square">
+                <li>feijoada</li>
+                <li>tropeiro</li>
+                <li>moqueca</li>
+            </ul>
+        </li>
+        <br>
+        <li>italianas
+            <ul type="square">
+                <li>pizza
+                    <ul type="circle">
+                        <li>calabresa</li>
+                        <li>marguerita</li>
+                    </ul>
+                </li>
+                <li>macarrão</li>
+                <li>lasanha</li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+    <!--LINKS E ANCORAS-->
+    <h1>LINKS E ÂNCORAS</h1>
+
+    <!--links externos-->
+    <h2>links:</h2>
+    <h3>É possível usar links com a tag &lt;a&gt; com a seguinte estrutura:</h3>
+    <h3>&lt;a href="link aqui"&gt;/a&gt;</h3>
+    <p><a
+            href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/">
+            Aula sobre links</a></p>
+    <h3>Para abrir o link em outra aba, basta usar o comando target="_blank" depois do link, também é recomendado o uso
+        do rel="external", que indica ao navegador que se trata de um link externo:</h3>
+    <p><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/"
+            target="_blank">Aula sobre links em nova aba</a></p>
+
+    <!--ANCORAS-->
+
+    <h2>Âncoras:</h2>
+
+    <h3>Leva para determinado local da propria página ou pra outra pagina própria usando href="nome do arquivo" ou
+        href="#id criado"</h3>
+    <p>Voce pode linkar uma outra pagina sua: <a href="../pag2.html">clique aqui</a></p>
+    <p>Você pode linkar algum local da propria pagina:<a href="#topo">topo</a></p>
+
+    <h3>Dica: É possivel navegar entre pastas anteriores com o comando "../" que irá consultar todos os arquivos presentes na pasta em que esta localizada a pasta onde o codigo está.</h3>
+
+    <!--LINK PARA DOWNLOAD-->
+
+    <h2>Links para download:</h2>
+
+    <h3>É possivel usar links para realizar downloads de arquivos, basta adicionar o diretorio do arquivo no href do
+        link(href="foto.jpeg"download):</h3>
+
+    <p><a href="../imagens/guia.jpeg" download>Baixar foto HTML</a></p>
+    <br>
+    <!--IMAGENS DINAMICAS-->
+    <h1>IMAGENS DINAMICAS: </h1>
+
+    <h2>Imagens que se adaptam conforme tamanho da tela</h2>
+    <h3>Tag usada: <u>&lt;picture&gt;</u></h3>
+    <h3>parametro usado: <u>&lt;source media="(min-width: )" srcset="" type="image/"&gt; </u></h3>
+
+    <!--link para aba com imagem dinamica-->
+    <a href="paginas_extras/imagem_dinamica.html">consultar imagem dinamica</a>
+
+    <br>
+    <br>
+
+    <h3>Cada parametro "source:media" determina ate que tamanho a imagem deve ser exibida, alternando para a menor quando o tamanho for atingido:</h3>
+<pre>
+    
+        <code>
+&lt;picture&gt;
+&lt;source media="(max-width:650px )" srcset="../imagens/gatopequeno.jpeg"&gt;
+
+&lt;source media="(max-width:800px )" srcset="../imagens/gatomedio.jpeg" type="image/jpeg"&gt;
+
+&lt;source media="(max-width: 1000px)" srcset="../imagens/gatomedio2.jpeg" type="image/jpeg" &gt;
+
+&lt;img src="../imagens/gatogrande.jpeg" alt=""&gt;
+&lt;/picture&gt;
+</code>
+</pre>
+<br>
+
+    <h1>MÍDIAS ALTERNATIVAS</h1>
+    <h2>Áudios:</h2>
+    <h3>Um adio é exibido através da tag &lt;audio&gt;</h3>
+    <p>"controls" você adiciona o display para o usuario controlar o audio, <br>"autoplay" para o site rodar o audio automaticamente<br> "loop" que ira fazer o audio tocar em loop</p>
+    <audio src="../midia/Yo Picasso - Verified Picasso.mp3" autoplay controls></audio>
+    <br>
+    <h3>Para consultar mais sobre conpatibilidade de audios e navegadores: <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-3-colocando-audio-no-seu-site/">Clique aqui</a></h3>
+<br>
+<!--VIDEOS-->
+<h2>Videos hospedados:</h2>
+
+<h3>tag &lt;video&gt;:<code> &lt;video src="../midia/lavandotomate.mp4" width="700" controls&gt;
+    &lt;/video&gt;</code></h3>
+
+<p>"controls"<br>"width" altera a largura<br>"height" altera a altura <br>"poster" adiciona uma thumb a sua escolha <br> Assim como em audios, "loop" e "autoplay" também funcionam </p>
+
+<h4>!É  possivel usar sources src para otimizar a compatibilidade com todos os navegadores!</h4>
+<a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-5-videos-em-hospedagem-propria/" target="_blank">Usando source</a>
+<br>
+<br>
+
+<video src="../midia/lavandotomate.mp4" width="500" controls></video>
+<br>
+<!--VIDEOS INCORPORADOS-->
+<h2>Vídeos incorporados:</h2>
+
+<h3>É possivel usar umm video do youtube no seu site, basta apenas incoorporar o seu link através do botão compartilhar:&lt;iframe&gt;</h3>
+
+<h4>copie o link e cole no seu codigo</h4>
+<img src="../imagens/incorporar.png" width="500" height="200" alt="incorporar e copiar">
+<br>
+<h4>Video incorporado abaixo:</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=PlQpSx0k4cnnfWYL" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+<br>
+
+<h1>divisão semantica do site</h1>
+<h2>tipos de div</h2>
+<pre>
+<h3>Cabeçalho</h3>
+    <code>&lt;header&gt; &lt;/header&gt; <span class="obs">/div cabeçalho</span></code>
+    <code>&lt;nav&gt; &lt;/header&gt; <span class="obs">/div navegação do cab</span></code>
+
+<h3>Main</h3><code>
+    &lt;main&gt; &lt;/main&gt; <span class="obs">//div corpo principal</span>
+    &lt;section&gt; &lt;/main&gt; <span class="obs">//sessão</span>
+    &lt;Article&gt; &lt;/main&gt; <span class="obs">//artigo</span>
+    &lt;aside&gt; &lt;/main&gt; <span class="obs">//detalhes sobre o artigo</span>
+</code>
+
+<h3>Rodapé</h3>
+    <code>&lt;footer&gt; &lt;/footer&gt; <span class="obs">//div rodapé</span></code>
+</pre>
+<br>
+<a style="font-size: 25px;"href="paginas_extras/sitefake.html">Exemplo de site com divisões semanticas formatadas</a>
+
+
+<p style="text-align: center;"><a class="voltar" href="#topo">Voltar ao topo</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

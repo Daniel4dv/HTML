@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anotacoes_css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--BOTAO DE VOLTAR-->
+    <p style="text-align: center;"><a class="voltar" href="menu_principal.html">Voltar ao Menu</a></p>
+
+    <a style="font-size: 25px;" href="paginas_extras/sitefake.html">Exemplo de site com divisões semanticas
+        formatadas</a>
+
+    <!--COMO ESTILIZAR-->
+    <h1 id="topo">Como estilizar</h1>
+
+    <h2>Estilos inline:</h2>
+    <h3>Aplicando estilos dentro da tag:</h3>
+    <code>
+        &lt;h1 <code style="color: red;" >style="parametro desejado"</code> &gt; "titulo" &lt;/h1 &gt;
+    </code>
+    <p>A parte destacada em vermelho demonstra como e onde deve ser usado o parametro de estilo</p>
+    <p>"color:red;"<br>"font-size:20px" <br> "font-family:arial"
+    </p>
+
+    <!-- CSS NO HEAD-->
+    <h2>CSS no head:</h2>
+    <h3>É possivel adicionar os estilos dentro do cabeçalho através da tag: &lt;style&gt;</h3>
+    <code>
+&lt;head  &gt;<br>
+<code>
+    &lt;style&gt; <br>
+<code style="color:red"> 
+    body{ <br>
+        "parametros desejados" <br>
+    } <br>
+    h1{ <br>
+        "parametros desejados" <br>
+    }
+</code>
+    &lt;/style &gt;
+    </code>
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+    </code>
+
+    <!--CSS EXTERNOS-->
+    <h2>CSS Externos:</h2>
+    <h3>É possivel linkar arquivos externos(CSS) em qualquer codigos HTML através do comando:</h3>
+    <code>
+        &lt;link rel="stylesheet" href= <code style="color:red">"nome_do_arquivo_css"</code> &gt;
+    </code>
+    <p>Tudo que for escrito nesse arquivo, será implementado automaticamente na pagina</p>
+    <h3>Dica:</h3>
+    <p> <mark style="background-color:lightblue"> Ao segurar "ctrl" e clical em um arquivo que não exista, você consegue
+            cria-lo automaticamente</mark></p>
+
+    <!--CORES-->
+    <h1>CORES</h1>
+    <h2>DEGRADÊ:</h2>
+    <h3>Ao inves de cores você pode adicionar degrades:</h3>
+
+    <pre><code>
+background-image: linear-gradient(<code style="color: red;">to bottom </code>, #023243, #095976a6) 
+</code></pre>
+
+    <p>to botom = de cima pra baixo <br>
+        to right = pra direita <br>
+        to left = pra esquerda <br>
+        to up = pra cima <br>
+        -45deg = direção de -45 graus <br>
+        (radial-radient)circle = circular <br>
+    </p>
+
+    <h3>Fixa o degrade por todo o conteudo, nao o repetido em dividoes separadas </h3>
+    <code>"background-attachment:fixed"</code>
+    <p>também é possivel controlar a porcentagem das cores usadas</p>
+
+    <h3>Exemplo:</h3>
+    <div style="background-image: linear-gradient(to right,rgba(28, 161, 95, 0.661),rgb(27, 76, 181))">
+
+        <a class="botao"
+            href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-13-aula-06-como-criar-degrade-com-css/"
+            target="_blank">
+            <pre>
+
+<h3 style="text-align: center; font-size: 20px; font-family: verdana;">clique para ver mais</h3>
+</pre>
+    </div>
+    </a>
+    <br>
+    <h1>tipografia</h1>
+    <h2>fontes</h2>
+    <h3>Tipos de fonte:</h3>
+    <ul>
+
+        <li class="blocos">serif</li>
+        <li class="blocos">sans-serif</li>
+        <li class="blocos" class="blocos">monospace</li>
+        <li class="blocos">cursive</li>
+        <li class="blocos">fantasy</li>
+
+    </ul>
+    <br>
+
+    <h2>exemplos</h2>
+
+    <p style="font-family: serif;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus rerum reiciendis
+        blanditiis inventore. Ipsum, laudantium ullam. Nihil ea, illo beatae quia quae nisi quibusdam atque eveniet
+        voluptates delectus maxime corrupti!</p>
+
+
+    <p style="font-family: sans-serif;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus rerum
+        reiciendis blanditiis inventore. Ipsum, laudantium ullam. Nihil ea, illo beatae quia quae nisi quibusdam atque
+        eveniet voluptates delectus maxime corrupti!</p>
+
+    <p style="font-family: monospace;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus rerum
+        reiciendis blanditiis inventore. Ipsum, laudantium ullam. Nihil ea, illo beatae quia quae nisi quibusdam atque
+        eveniet voluptates delectus maxime corrupti!</p>
+
+    <p style="font-family: cursive;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus rerum reiciendis
+        blanditiis inventore. Ipsum, laudantium ullam. Nihil ea, illo beatae quia quae nisi quibusdam atque eveniet
+        voluptates delectus maxime corrupti!</p>
+
+    <p style="font-family: fantasy;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus rerum reiciendis
+        blanditiis inventore. Ipsum, laudantium ullam. Nihil ea, illo beatae quia quae nisi quibusdam atque eveniet
+        voluptates delectus maxime corrupti!</p>
+
+    <br>
+    <h2>Familia de fontes</h2>
+
+    <h3>Você pode alternar entre fontes com o comando : <code>font-family: <code style = color:red > exemplo</code>
+        </code> </h3>
+    <h3>Exemplo</h3>
+    <pre>
+        <code>h1 {
+    font-familly: arial;
+        }</code>
+</pre>
+    <h3>É interessante usar mais de uma fonte para atender a todos os dispositivos</h3>
+    <br>
+
+    <!--Tamanho de fontes-->
+    <h2>Tamanho de fontes</h2>
+    <h3>Alternando tamanho do texto com : <code>font-size: <code style="color:red">tamanho</code></code></h3>
+    <h3>É recomendado o uso de <code style="color:red">px</code>(pixels) ou <code style="color:red">em</code>(relativo
+        ao tamanho original(16px)) na definição do tamanho das fontes</h3>
+    <h3>Exemplo:</h3>
+
+    <pre>
+<code>
+    h1
+    {
+        font-size:16px
+    }
+</code></pre>
+
+    <h2>peso das fontes</h2>
+    <h3>Alternando o peso(grossura) da fonte com: <code>font-weight</code> </h3>
+
+    <h3>Exemplo</h3>
+    <code>font-weight:<code style="color:red">lighter</code>
+    </code>
+    <h3>Pesos possíveis: <code>Lighter,normal,bold,bolder.
+    100~900
+</code></h3>
+
+    <h2>Simplificando o estilo de fonte</h2>
+    <h3>É possivel escrever dessa forma mais prática:</h3>
+    <p>ordem: font-style > font-weight > font-size > font-familly</p>
+    <pre><code>font: italic    bold     2em     'work Sans',sans-serif;</code></pre>
+
+    <br>
+    <!--USANDO FONTES EXTERNAS-->
+
+    <h2> <a style="text-decoration:none"
+            href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-14-aula-06-usando-google-fonts/"
+            target="_blank">Usando fontes externas</a></h2>
+    </a>
+    <h3>Google fonts</h3>
+
+    <p>Para usar o google fonts você deve copiar o link do @import do site e colar ele no doc CSS</p>
+
+    <h3>Fontes baixadas</h3>
+    <p>Para importar uma fonte baixada voce importa ela através do comando:</p>
+    <pre>
+<code>
+    @font-face {
+        font-family: azonix <code style="color:red">(nome da fonte)</code> ;
+        src: url(azonix.otf) format('opentype'); <code style="color:red">(nome do arquivo e formato)</code>
+                }       
+</code>
+</pre>
+
+    <!--Alinhando textos-->
+    <h1>ALINHAMENTO DE TEXTOS</h1>
+    <h2>Alinhando um elemento do site</h2>
+    <h3>Text-align: Alinhamento do texto</h3>
+
+    <pre>
+    <code>body {
+        text-align:left,center,right,justify
+        }</code>
+</pre>
+    <h3>Text-indent: Cria um parágrafo</h3>
+    <pre><code>    body{
+        text-indent:30px
+    }
+</code></pre>
+
+    <!--Seletores-->
+    <h1>Seletores personalizados</h1>
+
+    <h2>ID</h2>
+    <h3>id="<code style="color:red">nome do id</code>" dentro da tag</h3>
+    <pre><code>
+        &lt;p&gt; &lt;a <code style="color:red">id="voltar"</code> href="<code style="color:red">#topo</code>"&gt;Voltar ao topo&lt;/a&gt;&lt;/p&gt;  
+</code></pre>
+    <p>"#topo" é referente a id criada anteriormente, nos referimos a uma id com #seuNome</p>
+
+
+
+    <h2>classes</h2>
+
+    <h3>É recomendado ser usado toda vevz que for necessário aplicar em mais de uma tag </h3>
+
+    <h3>Funciona da mesma forma do que o #ID</h3>
+
+    <h3>class="<code style="color:red">nome da class</code>" dentro da tag</h3>
+
+    <pre>
+    <code>
+        &lt;li <code style="color: red;">class="blocos"</code>&gt;serif&lt;/li&gt;
+</code>
+</pre>
+
+    <p>Também é possível adicionar mais de uma classe na mesma tag além de uma ID em uma tag com classe</p>
+
+    <pre>
+    <code>&lt;h1 class=<code style="color: red;">"principal</code> <code style="color: blue;">moderno"</code>&gt; título&lt;/h1&gt;</code>
+    
+    <code>&lt;h1 id=<code style="color: red;">"principal"</code> class=<code style="color: blue;">"moderno"</code>&gt; título&lt;/h1&gt;</code>
+</pre>
+
+    <!--TRABALHANDO COM PSEUDO-CLASSES-->
+    <h1>trabalhando com PSEUDO-CLASSES</h1>
+    <br>
+    <h2 class="title2" style="text-indent: 1%;">hover</h2>
+
+
+
+    <div class="quadrados">1</div>
+    <div class="quadrados">2</div>
+    <div class="quadrados">3</div>
+
+    <h3>Esses quadrados são divs criadas do zero</h3>
+
+    <!--html-->
+
+    <pre class="titlecode">HTML<code>
+    &lt;div&gt;1&lt;/div&gt;
+    &lt;div&gt;2&lt;/div&gt;
+    &lt;div&gt;3&lt;/div&gt; 
+</code>
+</pre>
+
+    <!--CSS-->
+
+    <pre class="titlecode2">CSS<code>
+    div {
+        height: 120px; <span class="obs">//altura</span>
+        width: 130px; <span class="obs">//largura</span>
+        display: inline-block;  <span class="obs">//alinhar lateralmente</span>
+        border: 1px solid black; /<span class="obs">/personalizar borda</span>
+        text-align: center; <span class="obs">//centralizar o texto das divs</span>
+        background-color: rgb(69, 122, 187); <span class="obs">//cor de fundo</span>
+    }
+</code>
+</pre>
+
+    <h3>Aplicando a pseudo-classe (hover) em uma div você cria personalizações em estado flutuante(quando o mouse está
+        por cima)</h3>
+
+    <pre><code>
+        div:<span class="obs">hover</span> {
+            background-color: rgb(162, 201, 244);
+        }</code>
+</pre>
+
+
+    <h3><span class="obs">div{}</span>/personalização da div</h3>
+    <h3><span class="obs">div.hover{}</span>/personalização da div quando o mouse esta por cima</h3>
+
+    <br>
+
+    <!--TEXTO ESCONDIDO-->
+    <h2>Elementos ocultos com hover</h2>
+
+    <h3>Passe o mouse por cima do texto abaixo</h3>
+
+    <div class="texto">
+        <span style="font-size: 25px;">AQUI</span>
+        <p class="textoesc" style="color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae sed
+            accusantium velit!
+            Voluptatum, voluptatibus optio officia ipsa officiis aperiam inventore, modi illo itaque doloremque aliquam
+            deserunt voluptatem dignissimos fuga ratione.</p>
+    </div>
+
+    <h3><code><span class="obs">Hover</span></code> sendo usado com afiliação</h3>
+
+    <br>
+
+    <pre class="titlecode"> HTML<code>
+&lt;div&gt;
+    texto a mostra(onde o paragrafo esta oculto)
+    &lt;p>TEXTO ESCONDIDO&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+    <pre class="titlecode2"> CSS<code>
+        div{
+            width: 85px; } <span class="obs">//Personaliza a largura que o a div ocupa</span>
+        div > p{
+            display:none;} <span class="obs">//Determina que o filho da div (p) não sera mostrada(display:none)</span>
+        div:hover{
+            color: rgb(255, 3, 3);   } <span class="obs">//Cor do texto</span>
+        div:hover > p{
+            display: block; <span class="obs">//mostra o texto</span>
+            font-family: 'Gill Sans' <span class="obs">//fonte</span>
+            width:1000px; <span class="obs">// largura que o p vai ocupar</span>
+         }  </code></pre>
+
+    <!--personalizando LINKS-->
+    <h1>personalizando links</h1>
+    <h2>:visited e :active</h2>
+    <ul>
+        <li><a class="ldemo" href="https://www.cursoemvideo.com " target="_blank">curso em video</a></li>
+        <li><a class="ldemo" href="https://www.youtube.com" target="_blank">youtube</a></li>
+        <li><a class="ldemo" href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf"
+                target="_blank">github</a></li>
+    </ul>
+
+    <pre class="titlecode2">CSS<code>
+    a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+            }
+            a:active { <span class="obs">//quando o link é clicado</span>
+    font-size: 20px;
+    color: orangered;
+            }
+            a:visited { <span class="obs">//status de visitado</span>
+    color: rgb(108, 11, 243); 
+            }</code>
+</pre>
+
+    <h2>PSEUDO-ELEMENTOS</h2>
+
+    <h3>Elementos extras adicionados através do CSS não presentes no HTML</h3>
+    <ul>
+        <li><a class="ldemo2" href="https://www.cursoemvideo.com " target="_blank">curso em video</a></li>
+        <li><a class="ldemo2" href="https://www.youtube.com" target="_blank">youtube</a></li>
+        <li><a class="ldemo2" href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf"
+                target="_blank">github</a></li>
+    </ul>
+
+    <pre class="titlecode2"> CSS
+    <code>
+    a::before{
+        content: '[link] ';
+        }
+    a::after{
+        content: ' [clique aqui]';
+        }</code>
+</pre>
+
+    <!--CAIXAS E MARGENS-->
+
+    <h1>MODELO DE CAIXA</h1>
+    <img src="../imagens/modelocaixa.png" alt="">
+    <br>
+    <br>
+    <h2>tipos de borda</h2>
+    <h3>Border-style::</h3>
+
+    <br>
+
+    <div style="display:inline-flex;">
+        <div
+            style="background-color: rgb(219, 207, 207);height: 30px;width:10;border:10px solid orangered;margin-right: 10px;padding: 5px;">
+            solid</div>
+        <div
+            style="background-color: rgb(219, 207, 207);height: 30px;width:1;border: 10px double orangered;margin-right: 10px;padding: 5px;">
+            double</div>
+        <div
+            style="background-color: rgb(219, 207, 207);height: 30px;width:10;border: 10px dashed orangered;margin-right: 10px;padding: 5px;">
+            dashed</div>
+        <div
+            style="background-color: rgb(219, 207, 207);height: 30px;width:1;border: 10px dotted orangered;margin-right: 10px;padding: 5px;">
+            dotted</div>
+        <div
+            style="background-color: rgb(219, 207, 207);height: 30px;width:1;border-width: 10px;border-style: groove;border-color: orangered;margin-right: 10px;padding: 5px;">
+            groove</div>
+
+    </div>
+
+
+    <p>
+        Padding // determina a largura do espaço entre a caixa e a borda </p>
+    <p>Border //determina a largura da borda</p>
+    <p>Margin//determina o espaço invisivel gasto após a borda(espaço entre um e outro)</p>
+    <p>Outline // Personaliza o tracejado além da borda</p>
+    <h3>Estrutura geral</h3>
+    <code>border<span class="obs">(locale)</span>: 10px<span class="obs">(width)</span> solid<span class="obs">(style)</span> black<span class="obs">(color)</span></code>
+    <br>
+    <h3>Para casos de valores diferentes como em padding e margin </h3>
+    <code>Padding<span class="obs">(locale)</span>: 10px<span class="obs">(top)</span> 5px<span class="obs">(right)</span> 7px<span class="obs">(bottom)</span> 10px<span class="obs">(left)
+            <br>
+        </span> <br>margin:auto //centraliza no centro automaticamente</code>
+
+    <h2>Sombras</h2>
+
+    <div style="display: inline-flex" ;>
+        <div
+            style="background-color: rgb(0, 53, 144); height: 100px;width: 100px; box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.403);color: rgb(0, 53, 144);margin-right: 30px;">
+            1</div>
+        <div style="margin-top: 30px;">
+            <code>
+            <span style="display:inline-block" id="codigo">box-shadow 
+                <span id="codigox">Codigo para o CSS</span>
+            </span>:
+             <span id="horizotal">10px <span id="horizontalx">Deslocamento para horizontal da sombra</span></span> 
+
+             <span id="vertical">10px <span id="verticalx">Deslocamento vertical da sombra</span></span> 
+             <span id="espalhamento">10px  <span id="espx">Espalhamento da sombra</span></span> 
+             <span id="cor">black <span id="corx">Cor da sombra</span></span>;
+        </code>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <h2>bordas arredondadas
+    </h2>
+    <div style="display: inline-flex;">
+
+        <div
+            style="height:100px;width:100px;background-color: rgb(0, 53, 144); border-radius: 15px;color: rgb(0, 53, 144);">
+            1</div>
+
+        <div style="margin:30px ;">
+            <code>border-radius:20px//1px 2px 50px 90px;</code>
+        </div>
+    </div>
+
+    <h1>RESPONSIVIDADE</h1>
+
+    <pre>
+        <code>
+    main{
+        min-width:320px ; <span class="obs">Determina a largura mínima</span>
+        max-width:800px ; <span class="obs">Determina a largura máxima</span>
+        margin: auto; <span class="obs"> Centraliza o corpo no centro da tela</span>
+    }
+
+    img{
+        width: 100%; <span class="obs"> Faz com que a imagem ocupe 100% do corpo da pagina</span>
+    }
+        </code>
+    </pre>
+
+    <a href="paginas_extras/responsividade.html" target="_blank">Página responsiva</a>
+
+
+    <!--IMAGENS DE WALPAPER-->
+    <h1>imagens de walpaper</h1>
+
+    <style>
+        .square{
+            display:inline-block;
+            border:5px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 247, 255, 0.081);
+        }
+
+        #s1{
+        background-image: linear-gradient(to bottom, yellow,orange);
+        margin-right: 250px;
+        }
+        #s2{
+          background-image: url(../imagens/wallpaper002.jpg);  
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="square" id="s1">
+
+</div>
+<div class="square" id="s2">
+    
+</div>
+
+<pre>
+
+<div style="display: inline-flex;">
+<code>
+background-image:linear-gradient(to bottom,yellow,orange)
+</code>
+    <code>
+    background-image:url("<span class="obs" >diretorio do arquivo</span>")
+    </code>
+</div>
+</pre>
+
+<h2>repetiçoes</h2>
+
+<pre>
+    <code>
+        body{
+            background-image: url(imagens/pattern003.png);
+            background-size: 100px 100px; <span class="obs">Tamando da imagem de repetição</span>
+            background-repeat: no-repeat; <span class="obs">Faz com que a img não repita</span>
+            background-repeat: repeat-x; <span class="obs"> Faz a img repetir apenas no eixo X</span>
+            background-repeat: repeat-y; <span class="obs"> Faz a img repetir apenas no eixo Y</span>
+            background-repeat: repeat; <span class="obs"> Faz com que a img repit anormalmente caso necessário</span>
+
+        }
+    </code>
+</pre>
+
+
+<style>
+    .bloco{
+        background-image: url(../imagens/wallpaper003.jpg);
+        height:120px;
+        border: 5px solid black; 
+        margin:10px;
+        }
+
+    #q1{
+        background-position: left top;
+    }
+    #q2{
+        background-position: left center;;
+    }
+    #q3{
+        background-position: right bottom;
+    }
+    #q4{
+        background-position: left bottom;
+    }
+
+</style>
+
+<h2>background position</h2>
+
+<h3>Left Top</h3>
+<code> background-position: left top;</code>
+<div class="bloco" id="q1"></div>
+<h3>Left center</h3>
+<code> background-position: left center;</code>
+<div class="bloco" id="q2"></div>
+<h3>Right Bottom</h3>
+<code> background-position: right bottom;</code>
+<div class="bloco" id="q3"></div>
+<h3>Left Bottom</h3>
+<code> background-position: left bottom;</code>
+<div class="bloco" id="q4"></div>
+
+<h2>Ocupando o fundo todo corretamente</h2>
+
+
+<pre>
+    
+    <a class="voltar" href="paginas_extras/background.html">       Background com cover</a></pre>
+<pre>
+<code>
+    background-size: auto; <span class="obs">// Determina o walpaper centralizado </span>
+    background-size: contain; <span class="obs"> Mostra a imagem sem cortes</span>
+    background-size: cover; <span class="obs"> Cobre a tela inteira, manipulando a imagem</span>
+</code>
+</pre>
+
+
+<h2>background fixed</h2>
+
+<h3>Fixando o background independente do tamanho do conteúdo</h3>
+
+<pre>   
+<a class="voltar" href="paginas_extras/backgroundfixed.html">       Background fixado</a></pre>
+
+<pre>
+<code>
+       
+            height: 98vh; <span class="obs"> Determina o tyamanho do body como total da viewport</span>
+
+            background-image: url(imagens/wallpaper002.jpg); <span class="obs"> Caminho da imagem</span>
+            background-repeat: no-repeat; <span class="obs"> Faz com que a img não se repita</span>
+            background-position: center top; <span class="obs"> Determina a localização da img</span>
+            background-color: gray; <span class="obs"> Background color é necessario</span>
+            background-size: auto; <span class="obs"> se ajusta automatico</span>
+            background-size: contain; <span class="obs">Mostra 100% da img</span>
+            background-size: cover;  <span class="obs"> Se ajusta ao tamanho da tela (usado)</span>
+            background-attachment: fixed<span class="obs"> Fixa o back para não rolar junto com o conteudo</span>
+
+    <span class="obs">
+        /* short hand
+        background - color > image > position > repeat > [size] > attachment
+        */
+    </span>
+
+    background: black url(imagens/wallpaper002.jpg) center no-repeat fixed;
+    background-size: cover;
+
+
+</code>
+</pre>
+
+
+<h1>centrelizaçao de caixas</h1>
+
+<h2>Centraçliza vertical</h2>
+
+
+
+    <style>
+        .container{
+            position: relative;
+            background-image: url(../imagens/target001.png);
+            background-size: 100% 100%;
+            height: 300px;
+            max-width: 600px; 
+            background-color: blue;
+            padding: 12px;
+        }
+        .conteudo{
+            position: absolute;
+            background-image: url(../imagens/target001.png);
+            background-size: 100% 100%;
+            height: 130px;
+            width: 200px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+            .quadrado{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: blue;
+            display: inline-block;
+            margin-right: 10px; /* Adicione margem entre o quadrado e o texto */
+            vertical-align: middle; /* Alinha verticalmente com o texto */
+            }
+            .quadrado2{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: yellow; /* Cor do quadrado */
+            display: inline-block;
+            margin-right: 10px; /* Adicione margem entre o quadrado e o texto */
+            vertical-align: middle; /* Alinha verticalmente com o texto */
+            }
+
+            ul{
+                list-style: none;
+            }
+        </style>
+            <section class="container">
+                <article class="conteudo">
+                </article>
+            </section>
+
+            <div id="lista">
+  
+                <ul>
+                  <li><span class="quadrado"></span>.Container</li> <br>
+                  <li><span class="quadrado2"></span>.Conteúdo</li>
+                  
+              </ul>
+</div>
+
+<pre><code>
+
+    .container{
+        position: relative;
+        background-image: url(../imagens/target001.png);
+        background-size: 100% 100%;
+        height: 300px;
+        max-width: 600px; 
+        background-color: blue;
+        padding: 12px;
+    }
+    .conteudo{
+        position: absolute; <span class="obs">Torna a posição da caixa absoluta em ralação a caixa em que ela está</span>
+        background-image: url(../imagens/target001.png);
+        background-size: 100% 100%;
+        height: 130px;
+        width: 200px;
+        background-color: yellow;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%); <span class="obs">Ajusta a caixa para ponto de referencia central</span>
+    }
+
+</code></pre>
+
+
+<h1>Tabelas</h1>
+
+
+<style>
+    table{
+        width:400px;
+        height: 100px;
+        border-collapse: collapse;
+    }
+
+    td{
+        border: 1px solid black;
+    }
+   
+
+</style>
+    <section>    
+            
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+</table>
+
+<h2>hierarquia das Tabelas</h2>
+
+<div style="display: inline-flex;">
+    
+        <table style="margin-top: 10px;">
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+    
+            </tr>
+    
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+        </table>   
+<code style="margin-left: 20px;"><div>
+        &lt;table&gt;   <span class="obs"> //Tabela</span><br>
+        &lt;tr&gt;  <span class="obs"> //Linha</span> <br>
+        &lt;td&gt; 
+        &lt;/td&gt;  <span class="obs"> //Dados</span><br>
+        &lt;/tr&gt;  <span class="obs"> //Fecha a linha</span><br>
+        &lt;/table&gt;  <span class="obs"> //Termina a tabela</span><br>
+    </div>
+</code>
+
+</div>
+
+    </section>
+
+    <h2>Estilos para a tabela</h2>
+
+<pre>
+<code>
+        table{
+            width:600px;  <span class="obs"> //Largura</span>
+            height: 400px; <span class="obs"> //Altura</span>
+            border-collapse: collapse; <span class="css">/*separate,collapse*/</span> <span class="obs"> //Espaço entre celulas </span>
+        }
+    
+        td{
+            border: 1px solid black; <span class="obs">//Borda das celulas</span>
+            text-align: center; <span class="css">/* left,center, right*/</span> <span class="obs"> //Alinhamento horizontal</span>
+            vertical-align: middle; <span class="css">/*top,middle,bottom*/</span> <span class="obs">//Alinhamento vertical</span>
+        }
+</code>
+</pre>
+
+<h2>tabelas maiores</h2>
+<br>
+<div style="display: inline-flex;">
+    <section>
+    
+    
+    <style>
+    
+        table{
+            width: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            margin-top: 20px;
+    
+        }
+       td,th{
+        border:1px solid black;
+        padding: 8px;
+       }
+       thead,tfoot{
+        background-color: gray;
+        color: white;
+       }
+    
+       .num{
+        text-align: right;
+       }
+    
+    </style>
+    
+        <head>
+     <body>
+    
+        
+    
+        <table>
+            <caption>População do Brasil</caption>
+           <thead>
+               <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">População</th>
+               </tr>
+           </thead>
+    
+           <tbody>
+               <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+               </tr>
+    
+               <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 428 238</td>
+               </tr>
+    
+               <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 683 018</td>
+               </tr>
+    
+    
+               <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+               </tr>
+    
+               <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+               </tr>
+    
+               <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+               </tr>
+    
+               <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+               </tr>
+    
+               <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+               </tr>
+    
+               <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+               </tr>
+    
+               <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+               </tr>
+           </tbody>
+    
+    <tfoot>
+        <tr>
+            <th scope="col">total de habitantes</th>
+            <td class="num" ><strong>210 012 562</strong></td>
+        </tr>
+    </tfoot>
+        </table>
+    
+    </section>
+    
+    <section> <pre><code>       &lt;caption&gt; &lt;caption&gt;
+            &lt;table&gt; 
+            &lt;thead&gt; 
+
+                &lt;th&gt; &lt;/th&gt;
+
+            &lt;/thead&gt;
+
+            &lt;tbody&gt;
+                &lt;td&gt; &lt;/td&gt;
+
+            &lt;/tbody&gt;
+
+            &lt;tfoot&gt; 
+
+                &lt;th&gt; &lt;/th&gt;
+                &lt;td&gt; &lt;/td&gt;
+
+            &lt;/tfoot&gt;
+
+        &lt;/table&gt;
+            </code>
+        </pre>
+    </section>
+</div>
+
+<h2> efeito zebrado</h2>
+
+
+<style>
+
+    table{
+        width: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+
+    }
+   td,th{
+    border:1px solid black;
+    padding: 8px;
+   }
+   thead,tfoot{
+    background-color: gray;
+    color: white;
+   }
+
+   .num{
+    text-align: right;
+   }
+
+   .t2 > tr:nth-child(odd){
+    background-color: white;
+   }
+
+   .t2 > tr:nth-child(2n){
+    background-color: lightgray;
+   }
+   
+
+</style>
+
+    <head>
+ <body>
+
+   
+
+    <div style="display: inline-flex;">
+        <table>
+           <thead>
+               <tr>
+                <th>Estado</th>
+                <th>População</th>
+               </tr>
+           </thead>
+           <tbody class="t2">
+               <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+               </tr>
+               <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 428 238</td>
+               </tr>
+               <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 683 018</td>
+               </tr>
+        
+               <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+               </tr>
+               <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+               </tr>
+               <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+               </tr>
+               <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+               </tr>
+               <tr>
+                <td>Ceara</td>
+                <td class="num">9 132 078</td>
+               </tr>
+               <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+               </tr>
+               <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+               </tr>
+           </tbody>
+
+        <tfoot>
+        <tr>
+            <th>total de habitantes</th>
+            <td class="num"><strong>210 012 562</strong></td>
+        </tr>
+        </tfoot>
+        </table>
+        <pre>
+<code>
+        tbody > tr<span class="obs">:nth-child(odd)</span>{
+        background-color: white;
+        }
+
+        tbody > tr:<span class="obs">:nth-child(2n)</span>{
+        background-color: lightgray;
+        }
+</code>
+        </pre>
+    </div>
+
+  <h2></h2>
+
+
+
+
+
+
+
+
+
+
+
+    <p style="text-align: center"><a class="voltar" href="#topo">Voltar ao topo</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

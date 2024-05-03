@@ -1,0 +1,6 @@
+<!-- Anotações - Aula 1-->
+<!-- Parágrafos e quebras de linha-->
+TAGS
+<br> quebra de linha
+<p> paragrafo </p>
+&lt; e &gt; para imprimir TAGS (ex:&lt;p&gt;)
