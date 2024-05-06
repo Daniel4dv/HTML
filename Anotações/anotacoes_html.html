@@ -286,6 +286,91 @@ print("O numero não é maior que 4")
 <p style="text-align: center;"><a class="voltar" href="#topo">Voltar ao topo</a></p>
 
 
+<h1>tabelas</h1>
+<h2>mesclagem de celulas</h2>
+
+<style>
+
+   
+    
+ 
+    td{
+     border: 2px solid black;
+     padding: 10px;
+     text-align: center;
+    }
+    table{
+     width: 250px;
+     height: 250px;
+     border-collapse: collapse;
+     background-color: white;
+     margin-left: 60px;
+     margin-top: 150px;
+     margin-right: 30px;
+
+    }
+ 
+ </style>
+<div style="display: inline-flex;">
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <!--<td>C</td-->
+        </tr>
+    
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+    
+        <tr>
+            <td rowspan="2">G</td>
+            <td>H</td>
+            <!--<td >I</td>-->
+        </tr>
+    
+        <tr>
+            <!--<td>J</td>-->
+            <!--<td>K</td>-->
+            <td colspan="2">L</td>
+        </tr>
+    </table>
+    
+<pre>
+    <code>
+    &lt;table>
+        &lt;tr>
+            &lt;td&gt;A&lt;/td&gt;
+            &lt;td colspan="2">B&lt;/td&gt;
+            <span class="obs">C apagado</span>
+        &lt;/tr &gt;
+
+        &lt;tr&gt;
+            &lt;td>D&lt;/td&gt;
+            &lt;td&gt;E&lt;/td&gt;
+            &lt;td <span class="obs">rowspan="2" // expansão de linhas</span>&gt;F/td&gt;
+            &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td rowspan="2"&gt;G&lt;/td&gt;
+            &lt;td&gt;H&lt;/td&gt;
+            <span class="obs">I apagado</span>
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            <span class="obs">J apagado
+            K apagado</span>
+            &lt;td <span class="obs">colspan="2" //Expansão de colunas</span>>L&lt;/td&gt;
+        &lt;/tr &gt;
+    &lt;/table&gt;
+
+    </code>
+</pre>
+</div>
+
+
 
 
 
