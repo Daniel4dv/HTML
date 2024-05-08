@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Html</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -355,7 +355,7 @@ print("O numero não é maior que 4")
 
         &lt;tr&gt;
             &lt;td rowspan="2"&gt;G&lt;/td&gt;
-            &lt;td&gt;H&lt;/td&gt;
+            &lt;td&gt;H&lt;/td&gt ;
             <span class="obs">I apagado</span>
         &lt;/tr&gt;
 
@@ -513,9 +513,6 @@ print("O numero não é maior que 4")
     <style>
         iframe{
             border:2px solid black;
-            width:100%;
-            height: 400px;
-
         }
 
     </style>
@@ -531,7 +528,8 @@ print("O numero não é maior que 4")
 
     
 
-    <iframe srcdoc="<h1> Escolha uma das opções acima</h1>" name="frame">
+    <iframe  style="width: 100%;
+    height: 400px;" srcdoc="<h1> Escolha uma das opções acima</h1>" name="frame">
         Não foi possivel carregar
     </iframe>
 
@@ -544,6 +542,27 @@ print("O numero não é maior que 4")
     &lt;iframe src="#" <span class="obs">name="nome_frame"</span> &gt;&lt;/iframe&gt;
         <span class="obs">//iframe com tage name</span>
 </code></pre>
+
+<h1>Proteção de dados do iframe</h1>
+
+<div style="display: inline-flex;">
+    <iframe referrerpolicy="no-referer" sandbox="sandbox" src="link" frameborder="0" height="150" width="300"></iframe>
+    
+    
+<pre><code>
+
+    &lt;iframe referrerpolicy="no-referer" <span class="obs">//Segurança de dados</span>
+    sandbox="sandbox"  <span class="obs">//Segurança de dados</span>
+    src="link"&gt;
+    &lt;/iframe&gt;
+
+</code></pre>
+
+</div>
+<h3>determine aquilo que e seguro ou não</h3>
+
+
+
 
 
 
