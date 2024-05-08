@@ -501,11 +501,49 @@ print("O numero não é maior que 4")
         height <span class="obs">//Altura</span>
         width <span class="obs">//Largura</span>
         scolling = 'yes','no','auto' <span class="obs">//Scrolagem</span>
+        srcdoc <span class="obs">//Ao invés de src 
+                Permite adcionar html no iframe</span>
     </code>
     </pre>
 
 
+    <!--ALTERNANDO PAGINAS NO IFRAMEEEE-->
+    <h2>Alternando Paginas no iframe</h2>
 
+    <style>
+        iframe{
+            border:2px solid black;
+            width:100%;
+            height: 400px;
+
+        }
+
+    </style>
+
+    
+
+    <ul>
+        <li><a href="../sites/site1/site1.html" target="frame">Primeira Pagina</a>
+        <li><a href="../sites/site2/site2.html" target="frame">Segunda Página</a>
+        <li><a href="../sites/site3/cordel.html" target="frame">Terceira Pagina</a>
+
+    </ul>
+
+    
+
+    <iframe srcdoc="<h1> Escolha uma das opções acima</h1>" name="frame">
+        Não foi possivel carregar
+    </iframe>
+
+
+
+<pre><code>
+
+    &lt;a href="#" <span class="obs">target="nome_frame"</span>&gt;LINK&lt;/a&gt;
+        <span class="obs">//link para escolher o iframe</span>
+    &lt;iframe src="#" <span class="obs">name="nome_frame"</span> &gt;&lt;/iframe&gt;
+        <span class="obs">//iframe com tage name</span>
+</code></pre>
 
 
 
