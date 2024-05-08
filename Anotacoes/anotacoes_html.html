@@ -370,6 +370,140 @@ print("O numero não é maior que 4")
 </pre>
 </div>
 
+<h2>Agrupamento de Colunas</h2>
+
+<style>
+
+    caption{
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+            table{
+                border-collapse: collapse;
+                width: 500px;
+                margin-top: 50px;
+            }
+            td,th{
+                border: 1px solid black;
+                padding: 10px;
+            }
+    
+    
+            .cgroup{
+                background-color: yellow;
+            }
+    
+            .cnome{
+                background-color: azure;
+            }
+            .csexo{
+                background-color: aquamarine;
+            }
+        </style>
+   
+    
+    
+ 
+        
+    
+    
+    <div style="display: inline-flex;">
+        <table>
+        
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cgroup" span="2">
+            </colgroup>
+        
+        <Caption>Cadastro</Caption>
+            <thead>
+        
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </thead>
+        
+            <tbody>
+        
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+        
+                <tr>
+                    <td>Joao</td>
+                    <td>M</td>
+                    <td>21</td>
+                    <td>Programador</td>
+                </tr>
+        
+                <tr>
+                    <td>Daniel</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Desempregado</td>
+                </tr>
+                <tr>
+                    <td>Damaris</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Cozinheira</td>
+                </tr>
+        
+                <tr>
+                    <td>Diego</td>
+                    <td>M</td>
+                    <td>27</td>
+                    <td>Gari</td>
+                </tr>
+            </tbody>
+        </table>
+    <pre style="margin-top: 120px;">
+<code >
+&lt;colgroup&gt;
+    &lt;col class="cnome"&gt;
+    &lt;col class="csexo"&gt;
+    &lt;col class="cgroup" span="2"&gt;<span class="obs"> //Agrupa 2 colunas em uma classe</span>
+&lt;/colgroup&gt;
+</code>
+    </pre>
+    </div>
+
+
+    <!--IFRAMES-->
+    <h1>Iframes</h1>
+    <h2>como usar</h2>
+
+
+    <div style="display: inline-flex;">
+        <iframe src="paginas_extras/sitefake.html" frameborder="0" height="400" width="400"> 
+
+        </iframe>
+
+<pre><code>
+    &lt;iframe 
+    src="paginas_extras/sitefake.html"  <span class="obs">//link</span>
+    frameborder="0"&gt;    <span class="obs">//borda</span>
+    &lt;/iframe&gt;
+</code></pre>
+    </div>
+
+    <h2>Parametros do iframe</h2>
+
+    <pre>
+    <code>
+        height <span class="obs">//Altura</span>
+        width <span class="obs">//Largura</span>
+        scolling = 'yes','no','auto' <span class="obs">//Scrolagem</span>
+    </code>
+    </pre>
+
 
 
 

@@ -1080,6 +1080,169 @@ background-image:linear-gradient(to bottom,yellow,orange)
     </code>
   </pre>
 
+  <h2>Tabelas responsivas</h2>
+
+  <style>
+
+    caption{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding: 10px;
+    }
+    td,th{
+        border:1px solid black;
+        padding: 10px;
+    }
+
+    .tabr{
+        border-collapse: collapse;
+        width: 1000px;
+    }
+
+    tr:nth-child(even){
+        background-color: lightgrey;
+    }
+
+    #container{
+        overflow-x: auto;
+    }
+</style>
+
+
+
+
+<div id="container">
+<table class="tabr">
+    <caption>Tabelas reponsivas</caption>
+
+    <thead>
+        <th>Produto</th>
+        <th>Jan</th>
+        <th>Fev</th>
+        <th>Mar</th>
+        <th>Abr</th>
+        <th>Mai</th>
+        <th>Jun</th>
+        <th>Jul</th>
+        <th>Ago</th>
+        <th>Set</th>
+        <th>Out</th>
+        <th>Nov</th>
+        <th>Dez</th>
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td>X</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+            <td>8</td>
+            <td>11</td>
+            <td>19</td>
+            <td>11</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>X</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+            <td>8</td>
+            <td>11</td>
+            <td>19</td>
+            <td>11</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>X</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+            <td>8</td>
+            <td>11</td>
+            <td>19</td>
+            <td>11</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>X</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+            <td>8</td>
+            <td>11</td>
+            <td>19</td>
+            <td>11</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>X</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+            <td>8</td>
+            <td>11</td>
+            <td>19</td>
+            <td>11</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>X</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+            <td>8</td>
+            <td>11</td>
+            <td>19</td>
+            <td>11</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+
+
+<pre>
+    <code>
+        
+    #container{
+        overflow-x: auto; <span class="obs">//Crie uma div e aplique esse css na table</span>
+    }
+    </code>
+</pre>
 
 
 
