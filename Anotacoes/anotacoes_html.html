@@ -549,7 +549,7 @@ print("O numero não é maior que 4")
 <h1>Proteção de dados do iframe</h1>
 
 <div style="display: inline-flex;">
-    <iframe referrerpolicy="no-referer" sandbox="sandbox" src="../testes.html"  frameborder="0" height="150" width="300"></iframe>
+    
     
     
 <pre><code>
@@ -563,6 +563,166 @@ print("O numero não é maior que 4")
 </code></pre>
 </div>
 
+<h1>formulários</h1>
+
+<style>
+    *{
+        font-family:Arial, Helvetica, sans-serif ;
+    }
+
+</style>
+
+
+
+<div style="display: inline-flex;">
+    <form autocomplete="off" action="cadastro.php">
+    
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome"
+            id="inome"></p>
+    
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome " id="isobrenome"></p>
+    
+        <p> <input style=" display:block; margin: auto;" type="submit" value="Enviar"></p>
+    </form>
+    
+    
+<pre style="margin-left: 50px;"><code>
+&lt;form autocomplete="off" action="cadastro.php"&gt;<span class="obs">//preenchimento automatico
+     de inputs.
+     nome do arquivo para onde vao os dados</span>
+
+    &lt;p&gt;&lt;<span class="obs">label for="inome"</span>&gt;Nome:&lt;/label&gt;
+        &lt;input type="text" name="nome"
+        id="inome"&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;<span class="obs">label for="isobrenome"</span>&gt;Sobrenome:&lt;/label&gt;
+        &lt;input type="text" name="sobrenome " id="isobrenome"&gt;&lt;/p&gt;
+
+    &lt;p&gt; &lt;input type="submit" value="Enviar"&gt;&lt;/p&gt; <span class="obs">//botão enviar</span>
+&lt;/form&gt;
+
+</code></pre>
+</div>
+
+<h2>Métodos</h2>
+
+<div style="display: inline-flex;">
+    <form method="post" autocomplete="off" action="cadastro.php">
+    
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome"
+            id="inome"></p>
+    
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome " id="isobrenome"></p>
+    
+        <p> <input style=" display:block; margin: auto;" type="submit" value="Enviar"></p>
+    </form>
+    
+    
+    <code style="margin-left: 10px;"> method="post" <span class="obs">//Esconde os dados da URL</span></code>
+</div>
+
+<h3>CONFIRA A DIFERENÇA(URL) ENVIANDO DADOS NOS DOIS FORMULARIOS</h3>
+
+<h2 style="margin-top: 50px;">atributos de formulario</h2>
+
+
+<h3 style="margin-top: 50px;">FORMULARIO COM NOVOS ATRIBUTOS</h3>
+
+
+<form style="margin-top: 20px; border: 2px solid black;" autocomplete="on" action="cadastro.php" method="post">
+
+    <p>
+        <label for="iusu">Usuario:</label> 
+        <input type="text" name="usu" id="isu" required minlength="3" maxlength="15" size="15" autocomplete="username" placeholder="3-15 characteres">
+    </p>
+    
+    <p>
+        <label for="isenha">Senha:</label> 
+        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="8+ characteres" autocomplete="new-password"> <!--OU CURRENT-PASSWORD-->
+    </p>
+
+   
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+
+</form>
+
+
+<pre>
+
+
+    <code>
+        required: <span class="obs">Não permite que o input fique vazio</span>
+
+        minlength/maxlength: <span class="obs">Determina qte minima e maxima de char</span>
+
+        size="x": <span class="obs">Determina tamanho da caixa baseado na qte de characteres</span>
+
+        autocomplete=""(input) <span class="obs">Determina o tipo de input,adc algumas restrições.(username,new-password,
+        current-password,number)</span>
+
+        placeholder="" <span class="obs"> //Exibe texto no input</span>
+
+        &lt;input type="reset"&gt; <span class="obs">// botão para limbar os inputs</span>
+</code>
+</pre>
+
+<h2 style="margin-top: 50px;">mais atributos</h2>
+
+<div style="display: inline-flex;">
+    <form autocomplete="on" action="cadastro.php" method="post">
+    
+    
+    
+        <p>
+    
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0-10" step="0.1" required>
+    
+        </p>
+    
+        <p>
+    
+            <label for="imes">Mês</label>
+            <input type="month" name="mes" id="imes" value="2020-07">
+    
+        </p>
+    
+        <p>
+    
+            <label for="idata">Data:</label>
+            <input type="date" name="data" id="idata" value="2024-05-10">
+    
+        </p>
+    
+        <p>
+            <label for="ihora">Hora</label>
+            <input type="time" name="hora" id="ihora">
+    
+        </p>
+    
+    
+    
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    
+    </form>
+    
+    <pre style="margin-left: 50px;"><code>
+        min/max="x": <span class="obs">//Determina numero minimo ou maximo</span>
+    
+        step="0.x" <span class="obs">//Determina o aumento entre os valores(0.1/0.5/1)</span>
+    
+        value="": <span class="obs">//Determina um valor padrão(sobrepõe o placeholder)</span>
+    
+        type="month","date","time","number"
+        &lt;input <span class="obs">type="text"</span> name="" id=""&gt;</code></pre>
+</div>
 
 
 
