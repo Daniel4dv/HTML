@@ -633,22 +633,21 @@ print("O numero não é maior que 4")
 <h3 style="margin-top: 50px;">FORMULARIO COM NOVOS ATRIBUTOS</h3>
 
 
-<form style="margin-top: 20px; border: 2px solid black;" autocomplete="on" action="cadastro.php" method="post">
+<form style="margin-top: 20px;" autocomplete="on" action="cadastro.php" method="post">
 
-    <p>
-        <label for="iusu">Usuario:</label> 
-        <input type="text" name="usu" id="isu" required minlength="3" maxlength="15" size="15" autocomplete="username" placeholder="3-15 characteres">
-    </p>
-    
-    <p>
-        <label for="isenha">Senha:</label> 
-        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="8+ characteres" autocomplete="new-password"> <!--OU CURRENT-PASSWORD-->
-    </p>
-
-   
-
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    <fieldset>
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="isu" required minlength="3" maxlength="15" size="15" autocomplete="username" placeholder="3-15 characteres">
+        </p>
+        
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="8+ characteres" autocomplete="new-password"> <!--OU CURRENT-PASSWORD-->
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </fieldset>
 
 </form>
 
@@ -663,14 +662,17 @@ print("O numero não é maior que 4")
 
         size="x": <span class="obs">Determina tamanho da caixa baseado na qte de characteres</span>
 
-        autocomplete=""(input) <span class="obs">Determina o tipo de input,adc algumas restrições.(username,new-password,
-        current-password,number)</span>
+        autocomplete=""(input) <span class="obs">Determina o tipo de autocomplete("new-password","current-password","username")</span>
 
         placeholder="" <span class="obs"> //Exibe texto no input</span>
 
         &lt;input type="reset"&gt; <span class="obs">// botão para limbar os inputs</span>
 </code>
 </pre>
+
+
+<!--MAIS ATRIBUTOSSSS-->
+
 
 <h2 style="margin-top: 50px;">mais atributos</h2>
 
@@ -679,37 +681,26 @@ print("O numero não é maior que 4")
     
     
     
-        <p>
-    
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0-10" step="0.1" required>
-    
-        </p>
-    
-        <p>
-    
-            <label for="imes">Mês</label>
-            <input type="month" name="mes" id="imes" value="2020-07">
-    
-        </p>
-    
-        <p>
-    
-            <label for="idata">Data:</label>
-            <input type="date" name="data" id="idata" value="2024-05-10">
-    
-        </p>
-    
-        <p>
-            <label for="ihora">Hora</label>
-            <input type="time" name="hora" id="ihora">
-    
-        </p>
-    
-    
-    
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <fieldset>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0-10" step="0.1" required>
+            </p>
+            <p>
+                <label for="imes">Mês</label>
+                <input type="month" name="mes" id="imes" value="2020-07">
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata" value="2024-05-10">
+            </p>
+            <p>
+                <label for="ihora">Hora</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
     
     </form>
     
@@ -723,6 +714,73 @@ print("O numero não é maior que 4")
         type="month","date","time","number"
         &lt;input <span class="obs">type="text"</span> name="" id=""&gt;</code></pre>
 </div>
+<br><br><br>
+
+<!--EXPRESSÕES REGURLARES-->
+
+
+
+<h2>expressões regulares</h2>
+
+<form action="../cadastro.php" autocomplete="off">
+    <fieldset>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{5}-\d{4}$" required placeholder="(xx) xxxxx-xxxx">
+        </p>
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+
+
+<h3>DENTRO DO INPUT:</h3>
+<pre><code>
+    pattern="^\(\d{2}\)\d{5}-\d{4}$"
+
+    sintaxe: 
+
+    pattern=""
+
+    ^$ <span class="obs">//inicio e fim do pattern</span>
+
+    \d{x}-\d{y} <span class="obs"> \d{x}=qte numeros</span> 
+
+    \(: <span class="obs">Determina o parenteses como exp regular</span>
+</code></pre>
+
+
+<!--FIELDSET E LEGENDS-->
+<h2 style="margin-top: 100px;">FIELDSET E LEGEND</h2>
+<h3>COMPACTA O FORM COM BORDA E TITULO</h3>
+
+<pre>
+    <code>
+        &lt;fieldset&gt; <span class="obs">&lt;form&gt; &lt;/form&gt;</span>
+        &lt;/fieldset&gt;
+    
+        &lt;legend&gt; <span class="obs">"nome"</span>  &lt;/legend&gt;
+    </code>
+</pre>
+
+<form autocomplete="on" action="cadastro.php" method="post">
+
+    <fieldset>
+        <legend>Dados da conta</legend>
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="isu" required minlength="3" maxlength="15" size="18" autocomplete="username" placeholder="3-15 characteres">
+        </p>
+        
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="passWord" name="senha" id="isenha" required minlength="8" placeholder="8+ characteres" autocomplete="current-password"> <!--OU CURRENT-PASSWORD-->
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </fieldset>
+
+    </form>
 
 
 
