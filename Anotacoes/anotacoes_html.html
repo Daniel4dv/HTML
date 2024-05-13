@@ -880,6 +880,99 @@ max/min: valores ex:(&lt;input type="range" min="1" max="5" &gt;)
 
 </p>
 
+<!--SELECT DATALISTA TEXTAREA-->
+<h1 style="margin-top: 100px;">LISTAS E MENSAGENS</h1>
+
+<h2>select</h2>
+
+<form action="cadastro.php" method="post">
+
+    <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+
+
+            <optgroup label="Região Nordeste">
+                <option value="BA">Bahia</option>
+                <option value="BA">Maranhão</option>
+                <option value="BA">Rio Grande do Norte</option>
+                <option value="BA">Pernambuco</option>
+            </optgroup>
+        </select>
+    </p>
+
+<pre><code>
+    &lt;label for="iest"&gt;Estado&lt;/label&gt; <span class="obs">//label com nome do select</span>
+
+    &lt;select name="estado" id="iest"&gt; <span class="obs"> tag com name e id</span>
+
+        &lt;optgroup label="Nome do grupo"&gt; <span class="obs">//criação de um grupo de options com nome(opcional)</span>
+            &lt;option value="value" &gt; item da lista &lt;/option&gt; <span class="obs">//opção da lista com value e nome</span>
+        &lt;/optgroup&gt;
+        
+    
+</code></pre>
+
+
+<h2>datalist</h2>
+
+<h3>Listas com possivel entradabde texto</h3>
+
+<fieldset>
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="Dev">Desenvolvedor</option>
+            <option value="COZ">Cozinheiro</option>
+            <option value="ADV">Advogado</option>
+            <option value="FAX">Faxineiro</option>
+            <option value="PROF">Professor</option>
+            <option value="ENG">Engenheiro</option>
+    
+        </datalist>
+    </p>
+
+    <input type="submit" value="Confirmar">
+</fieldset>
+
+<pre><code>
+    &lt;label for="iprof">Profissão&lt;/label&gt; <span class="obs">//label com nome do input</span>
+
+    &lt;input type="text" name="prof" id="iprof" list="lstprof"&gt; <span class="obs">Input com parametro "list", que convoca um 
+    data list especifico</span>
+    
+    &lt;datalist id="lstprof"&gt; <span class="obs">//datalist com id sendo chamado</span>
+        &lt;option value="Dev"&gt;Desenvolvedor&lt;/option&gt; <span class="obs"> //item da lista</span>
+        &lt;option value="COZ"&gt;Cozinheiro&lt;/option&gt; <span class="obs"> //item da lista</span>
+        &lt;option value="ADV"&gt;Advogado&lt;/option &gt;  <span class="obs"> //item da lista</span> 
+    &lt;/datalist &gt; 
+
+</code></pre>
+<h2 style="margin-top: 50px;">Mensagem</h2>
+
+
+<fieldset>
+    <p>
+        <label for="imsg">Mensagem:</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+
+<h3>Sintaxe:</h3>
+<pre><code>
+    &lt;label for="imsg"&gt;Mensagem:&lt;/label&gt; <span class="obs"> //label com id e nome da msg</span>
+
+    &lt;textarea name="msg" id="imsg" cols="30" rows="10"&gt;&lt;/textarea&gt; <span class="obs">//tag com parametros para delimitar
+    a resolução do quadro</span>
+
+</code></pre>
+</fieldset>
 
 
 
