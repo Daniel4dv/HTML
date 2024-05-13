@@ -563,6 +563,9 @@ print("O numero não é maior que 4")
 </code></pre>
 </div>
 
+
+<!--FOORMULÁRIOS-->
+
 <h1>formulários</h1>
 
 <style>
@@ -593,7 +596,7 @@ print("O numero não é maior que 4")
      de inputs.
      nome do arquivo para onde vao os dados</span>
 
-    &lt;p&gt;&lt;<span class="obs">label for="inome"</span>&gt;Nome:&lt;/label&gt;
+    &lt;p&gt;&lt;<span class="obs">label for="inome"</span>&gt;Nome:&lt;/label&gt;      <span class="obs">label:cria o link entre p e input</span>
         &lt;input type="text" name="nome"
         id="inome"&gt;&lt;/p&gt;
 
@@ -781,6 +784,101 @@ print("O numero não é maior que 4")
     </fieldset>
 
     </form>
+
+    <h1>Chek boxes</h1>
+
+    <form action="../cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+        <legend>Esportes favorito</legend>
+        
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete</label> <br>
+            <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Vôlei</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label> <br>
+            <input type="checkbox" name="base" id="ibaseball"> <label for="ibaseball">Baseball</label> <br>
+        </fieldset>
+        
+        
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </form>
+
+<h3>inputs com &lt;label&gt;, basta clical na palavra mara marcar, faça o teste </h3>
+
+<h3>type="checkbox":</h3>
+<pre><code>
+    &lt;input <span class="obs">type="checkbox"</span> name="fut" id="ifut"&gt;
+    &lt;label <span class="obs">for="ifut"&gt;</span>Futebol&lt;/label&gt;
+
+</code></pre>
+
+
+<!--RADIO-->
+<h1>Radio</h1>
+
+<h2>check-box com opção unica</h2>
+
+<form action="../cadastro.php">
+<fieldset>
+    <legend>sexo</legend>
+
+    <input type="radio" name="sexo" id="imasc"> <label for="imasc">Masculino</label> <br>
+
+    <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+
+</fieldset>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="limpar">
+</form>
+
+<h3>Para a opção alternar é crucial que todas as opções tenham o mesmo "name":</h3>
+
+<h3>type="radio"</h3>
+
+<pre><code>
+
+    &lt;input <span class="obs">type="radio"</span>  <span class="obs">name="sexo"</span> id="imasc"&gt; &lt;label for="imasc"&gt;Masculino&lt;/label>&gt;
+
+    &lt;input <span class="obs">type="radio"</span> <span class="obs"> name="sexo"</span> id="ifem"&gt; &lt;label for="ifem"&gt;Feminino&lt;/label&gt;
+
+</code></pre>
+
+
+<!--COR,RANGE,FILE-->
+<h1>mAIS inputs</h1>
+
+
+<h2>cores</h2>
+
+<h3>type="color"</h3>
+<p>
+    <label for="icor">Cor:</label>
+    <input type="color" name="cor" id="icor">
+</p>  
+
+<h2>Rating</h2>
+<pre>
+<h3>type="range"
+max/min: valores ex:(&lt;input type="range" min="1" max="5" &gt;)
+</h3></pre>
+
+<p>
+
+    <label for="irange">Nivel de satisfação:</label>
+    <input type="range" name="range" id="irange" min="1" max="5">
+</p>
+
+<h2>arquivo</h2>
+
+<h3>type="file"</h3>
+
+<p>
+    <label for="ifoto">Foto de perfil:</label>
+    <input type="file" name="foto" id="ifoto">
+
+</p>
 
 
 
