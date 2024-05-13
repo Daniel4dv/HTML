@@ -3,58 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testes</title>
+    <title>Document</title>
 </head>
+
 <body>
+
+    <h1>Numeros</h1>
     
 
-    <h1>Formulário com listas</h1>
-    <form action="cadastro.php" method="post">
-
+    <form action="cadastro.php">
         <p>
-            <label for="iest">Estado</label>
-            <select name="estado" id="iest">
-
-                <optgroup label="Região Sudeste">
-                    <option value="MG">Minas Gerais</option>
-                    <option value="SP" selected>São Paulo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                </optgroup>
-
-
-                <optgroup label="Região Nordeste">
-                    <option value="BA">Bahia</option>
-                    <option value="BA">Maranhão</option>
-                    <option value="BA">Rio Grande do Norte</option>
-                    <option value="BA">Pernambuco</option>
-                </optgroup>
-            </select>
+            <label for="inmr1">Numero 1:</label>
+            <input type="number" name="nmr" id="inmr1" required oninput="isoma.innerHTML = Number(inmr1.value) + Number(inmr2.value)">
         </p>
-
         <p>
-            <label for="iprof">Profissão</label>
-            <input type="text" name="prof" id="iprof" list="lstprof">
-            <datalist id="lstprof">
-                <option value="Dev">Desenvolvedor</option>
-                <option value="COZ">Cozinheiro</option>
-                <option value="ADV">Advogado</option>
-                <option value="FAX">Faxineiro</option>
-                <option value="PROF">Professor</option>
-                <option value="ENG">Engenheiro</option>
-
-            </datalist>
+            <label for="nmr2">Numero 2:</label>
+            <input type="number" name="nmr" id="inmr2" required oninput="isoma.innerHTML = Number(inmr1.value) + Number(inmr2.value)">
         </p>
-
-            <p>
-                <label for="imsg">Mensagem:</label> <br>
-                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-            </p>
-
-        
-
-
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <p>
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
+
+
 </body>
 </html>

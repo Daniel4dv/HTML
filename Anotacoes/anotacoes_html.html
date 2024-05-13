@@ -974,6 +974,34 @@ max/min: valores ex:(&lt;input type="range" min="1" max="5" &gt;)
 </code></pre>
 </fieldset>
 
+<h1>output</h1>
+
+<fieldset>
+    <form action="../cadastro.php">
+        <p>
+            <label for="inmr1">Numero 1:</label>
+            <input type="number" name="nmr" id="inmr1" required oninput="isoma.innerHTML = Number(inmr1.value) + Number(inmr2.value)">
+        </p>
+        <p>
+            <label for="nmr2">Numero 2:</label>
+            <input type="number" name="nmr" id="inmr2" required oninput="isoma.innerHTML = Number(inmr1.value) + Number(inmr2.value)">
+        </p>
+        <p>
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+<pre><code>
+    "isoma.inner.HTML = Number(idnmr1.value) + (idnmr2.value)"
+</code></pre>
+</fieldset>
+
 
 
 
