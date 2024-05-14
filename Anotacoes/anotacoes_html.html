@@ -990,6 +990,15 @@ max/min: valores ex:(&lt;input type="range" min="1" max="5" &gt;)
         <label for="isoma">Soma:</label>
         <output name="soma" id="isoma">0</output>
         </p>
+
+        <p>
+
+            <label for="inum">Numero</label>
+            <input type="range" name="num" id="inum" max="10" min="1" value="5" oninput="ival.innerHTML= Number(inum.value)">
+            <output id="ival"> 5</output>
+
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
@@ -1000,7 +1009,12 @@ max/min: valores ex:(&lt;input type="range" min="1" max="5" &gt;)
 <pre><code>
     "isoma.inner.HTML = Number(idnmr1.value) + (idnmr2.value)"
 </code></pre>
+
+<h3>Usando javaScript em inputs/outputs. Estudar depois</h3>
+<span class="obs">So mostra coisas na tela</span>
 </fieldset>
+
+<h1>MEDIA QUERIES</h1>
 
 
 
