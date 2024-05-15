@@ -2,6 +2,8 @@
 
 /*CONFIGURAÇÕES DE TELA PAISAGEM*/
 
-html{
-    background-color: orangered;
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+    
 }
