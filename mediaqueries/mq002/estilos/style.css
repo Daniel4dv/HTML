@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/**CONFIGURAÇÕES DE TELA GERAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233dffa7;
+}
+
+h1{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.341);
+}
