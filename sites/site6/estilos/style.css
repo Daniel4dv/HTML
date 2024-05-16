@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+header{
+    background-color: white;
+}
+
+header h1{
+    padding: 10px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+menu{
+    display: block;
+}
+menu ul{
+    list-style-type: none;
+}
+menu a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    background-color: orangered;
+    color: white;
+    border-top: 1px solid black;
+}
+
+menu a:hover{
+    background-color: rgb(255, 108, 55);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagens/pexels-veeterzy-39811.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    filter:brightness(100%);
+    
+
+}
+
+main{
+    background-color: rgba(0, 0, 0, 0.421);
+    width: 80vw;
+    margin: auto;
+    padding: 25px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.533);
+    filter: brightness(100%);
+    
+}
+
+article#pais1{
+    display:inline-flex;
+    filter: brightness(100%);
+    
+}
+
+#square{
+    display:block;
+    width: 200px;
+    height: 300px;
+    background-image: url(../imagens/canada.jpeg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    filter: brightness(50%);
+}
+
+#cxtext{
+    
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    filter: brightness(100%);
+ 
+}
+a#botao{
+    text-align: center;
+    width: 180px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 50px 0px 0px 50px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+    filter: brightness(100%);
+}
+
