@@ -24,8 +24,24 @@ header h1{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-menu{
+
+
+span#burguer{
     display: block;
+    text-align: center;
+   background-color: orangered;
+   padding: 10px;
+}
+
+#burguer:hover{
+    cursor:pointer;
+    background-color: rgb(255, 138, 87);
+}
+
+
+
+menu{
+    display: none;
 }
 menu ul{
     list-style-type: none;
@@ -35,29 +51,35 @@ menu a {
     text-align: center;
     padding: 10px;
     display: block;
-    background-color: orangered;
+    background-color: coral;
     color: white;
     border-top: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 menu a:hover{
     background-color: rgb(255, 108, 55);
 }
 
-body{
+body,html{
     width: 100vw;
     height: 100vh;
     background-color: white;
     filter:brightness(100%);
+    margin: auto;
     
 
 }
 
 main{
-    background-color: rgba(255, 94, 0, 0.428);
+    
     width: 80vw;
-    margin: auto;
-    padding: 25px;
+    margin: auto;  
+}
+
+article#caixa{
+    background-color: rgba(255, 94, 0, 0.428);
+    padding: 20px;
     border-radius:20px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.458);
     filter: brightness(100%);
@@ -65,10 +87,23 @@ main{
     
 }
 
+article#txt{
+    background-color: rgba(255, 88, 5, 0.081);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.458);
+    margin: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   
+}
+
 #square{
     display:block;
-    width: 400px;
+    width: 365px;
     height: 200px;
+    margin: auto;
     border-radius: 20px;
     background-image: url(../imagens/canada.jpeg);
     background-color: white;
@@ -114,6 +149,7 @@ a#botao{
 #botao:hover{
     background-color:rgb(245, 107, 57);
     padding: 23px;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
 }
 
