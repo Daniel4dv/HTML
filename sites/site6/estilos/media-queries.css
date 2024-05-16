@@ -31,5 +31,9 @@
         background-color: rgb(255, 202, 183);
     }
 
+    #square{
+        width: 500px;
+    }
+
 }
 
