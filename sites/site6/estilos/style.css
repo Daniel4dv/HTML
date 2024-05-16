@@ -10,6 +10,9 @@ html{
     height: 100vh;
     background-color: black;
 }
+body{
+    height: 100vh;
+}
 
 header{
     background-color: white;
@@ -44,64 +47,73 @@ menu a:hover{
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(../imagens/pexels-veeterzy-39811.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    background-color: white;
     filter:brightness(100%);
     
 
 }
 
 main{
-    background-color: rgba(0, 0, 0, 0.421);
+    background-color: rgba(255, 94, 0, 0.428);
     width: 80vw;
     margin: auto;
     padding: 25px;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.533);
+    border-radius:20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.458);
     filter: brightness(100%);
-    
-}
-
-article#pais1{
-    display:inline-flex;
-    filter: brightness(100%);
+    margin-top: 20px;
     
 }
 
 #square{
     display:block;
-    width: 200px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
     background-image: url(../imagens/canada.jpeg);
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    filter: brightness(50%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.379);
+    filter: brightness(90%);
 }
 
-#cxtext{
-    
-    width: 500px;
-    height: 150px;
-    background-color: white;
+#square:hover{
     filter: brightness(100%);
- 
 }
-a#botao{
+
+.desc{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    width: 180px;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.361);
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+a#botao{
     display: block;
-    margin: 50px 0px 0px 50px;
+    font-size: 18px;
+    width: 180px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:auto;
     padding: 20px;
     text-decoration: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.124);
     color: white;
     background-color: orangered;
     border-radius: 20px;
     filter: brightness(100%);
+}
+
+#botao:hover{
+    background-color:rgb(245, 107, 57);
+    padding: 23px;
+    margin-bottom: -5px;
 }
 
