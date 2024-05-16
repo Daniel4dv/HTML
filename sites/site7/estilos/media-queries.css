@@ -1,0 +1,20 @@
+@charset "utf8";
+
+
+@media screen and (min-width:768px) and (max-width:992px){
+    section#tela{
+        width: 80vw;
+    }
+
+    div#img{
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    div#inps{
+        float: right;
+        height: 100%;
+        width: 60%;
+    }
+}
