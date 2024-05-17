@@ -45,5 +45,17 @@ section #img{
 div#inps{
     display: block;
     padding: 10px;
+    
+}
+
+
+
+div#inps>h1{
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+#inps > p{
+    font-size: 0.8em;
 }
 
