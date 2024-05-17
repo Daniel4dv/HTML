@@ -2,6 +2,11 @@
 
 
 @media screen and (min-width:768px) and (max-width:992px){
+
+    body{
+        background-image: linear-gradient(to top, coral,rgba(255, 115, 0, 0.814));
+    }
+
     section#tela{
         width: 80vw;
     }
@@ -10,11 +15,50 @@
         float: left;
         width: 40%;
         height: 100%;
+        border-radius: 20px 0px 0px 20px;
     }
 
     div#inps{
         float: right;
         height: 100%;
         width: 60%;
+        border-radius: 0px 20px 20px 0px;
     }
+}
+
+/*CONFIGUREAÇÕES PARA DESKTOP*/
+
+@media screen and (min-width:992px) {
+
+    body{
+        background-image: linear-gradient(to top, coral,rgba(255, 115, 0, 0.814));
+    }
+
+
+    section#tela{
+        width:80vw;
+        height: 80vh;
+    }
+
+    div#img{    
+        float:left;
+        width:50%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+    
+    div#inps{
+        float: right;
+        height: 100%;
+        width: 50%;
+        border-radius: 0px 20px 20px 0px;
+
+    }
+
+   
+
+    
+    
+    
+
 }
