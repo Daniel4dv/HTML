@@ -19,7 +19,7 @@ main{
 
 section#tela{
     background-color: white;
-    height: 600px;
+    height: 620px;
     width: 320px;
     margin: auto;
     border-radius: 20px;
@@ -31,12 +31,13 @@ section#tela{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.115);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    overflow: hidden;
 }
 
 section #img{
     display: block;
     background: green url(../imagens/estudante.jpeg)no-repeat;
-    height: 300px;
+    height: 280px;
     background-size: cover;
     background-position: center center;
     border-radius: 20px 20px 0px 0px;
@@ -45,6 +46,7 @@ section #img{
 div#inps{
     display: block;
     padding: 10px;
+    margin: auto;
     
 }
 
@@ -58,4 +60,88 @@ div#inps>h1{
 #inps > p{
     font-size: 0.8em;
 }
+
+
+
+
+/*CAIXAS DE TEXTO USUARIO E SENHA*/
+
+
+    form{
+        margin-top: 20px;
+    }
+
+    #bts{
+        margin-top:20px
+    }
+
+    form div.campo{
+        background-color: coral;
+        height: 40px;
+        display: block;
+        border-radius: 5px;
+        margin: 5px 0px; 
+      
+    }
+
+    div.campo>label{
+        display:none
+    }
+
+/*BOTOES E FORMULARIOS*/
+
+input[type=submit]{
+    display: block; 
+    font-size: 1em;
+    width: 95%;
+    height:40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.243);
+    border-radius: 5px;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+input[type=submit]:hover{
+
+    background-color: rgb(253, 135, 0);
+    cursor: pointer;
+}
+
+form a{
+    margin: auto;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 95%;
+    height: 42px;
+    background-color: white;
+    color: orangered;
+    border: 2px solid rgb(253, 135, 0);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.236);
+    margin-top: 10px;
+    padding-top: 6px ; 
+}
+
+
+form > div#bts > a.botao  > span{
+    font-size: .8em;
+}
+
+
+
+form a:hover{
+
+    background-color: rgb(253, 135, 0);
+    cursor: pointer;
+}
+
+
+
+
+
 
