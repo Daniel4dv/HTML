@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        var nome = prompt('Qual é o seu nome?')
+        document.write('Bem vindo ' + nome + '<br>')
+        document.write(`<strong>${nome}</strong>, seu nome tem ${nome.length} 
+        letras <br>`)
+        document.write(`Seu nome em Maiúsculas é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em Minúsculas é ${nome.toLowerCase()}<br>`)
+
+        //BONUS
+        //CONVERTENDO VALORES PARA MOEDAS LOCAIS E FORMATAÇÃO ESPECIFICA
+
+        var sal = 2560.7
+        sal.tofixed(2)// convertte para 2 casas decimais
+        sal.toLocaleString('pt-br',{style:'currency',currency:'BRL' }) // Localiza o valor ocm estilo de reaL (R$)
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

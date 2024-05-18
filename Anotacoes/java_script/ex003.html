@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando prompts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Usando prompts como variaveis</h1>
+    <p>Tratando os dados digitados como variaveis e usando eles no seu programa</p>
+
+    <br><br>
+    <pre>
+<code class="cod">
+    window.confirm
+        var nome = window.prompt("Qual é o seu nome?") //lendo o nome
+        window.alert("Tenha um bom dia " + nome) // exibindo o nome
+        var n1 = window.prompt("Digite um numero") //lendo um numero
+        var n2 = window.prompt("Digite outro numero") //lendo outro numero
+        var soma = n1 + n2                    //concatenando os numeros
+        window.alert("A sodma dos dois é " + soma) //mostrando a concatenação
+        //Para coletar valores inteiros
+        var n3 = Number.parseInt(window.prompt("Digite um numero"))  //lendo um nmr
+        var n4 = Number.parseInt(window.prompt("Digite outro numero"))// lendo outro nmr
+        soma2 = n4 + n3 //somando os nuemros de verdade
+        window.alert("A soma dos numeros é " + soma2) //mostrando a soma
+        //Fazendo isso de uma forma mais simples, analisando o tipo de numero(real,inteiro)
+        var n5 = Number(prompt("digite um numero"))
+        var n6 = Number(prompt("digite um numero"))
+        soma3 = n5 + n6
+        alert("A soma dos numeros simplificados é " + soma3)
+        //Para converter de numero para string
+        String(n)
+        n.toString(n)
+        //exemplo
+        alert("A string da soma é " + String(soma3))
+</code>
+</pre>
+
+
+
+
+
+
+
+    <!--JAVA SCRIPT-->
+    <script>
+        window.confirm
+        var nome = window.prompt("Qual é o seu nome?") //lendo o nome
+        window.alert("Tenha um bom dia " + nome) // exibindo o nome
+
+        var n1 = window.prompt("Digite um numero") //lendo um numero
+        var n2 = window.prompt("Digite outro numero") //lendo outro numero
+        var soma = n1 + n2                    //concatenando os numeros
+        window.alert("A sodma dos dois é " + soma) //mostrando a concatenação
+
+        //Para coletar valores inteiros
+        var n3 = Number.parseInt(window.prompt("Digite um numero"))  //lendo um nmr
+
+        var n4 = Number.parseInt(window.prompt("Digite outro numero"))// lendo outro nmr
+
+        soma2 = n4 + n3 //somando os nuemros de verdade
+        window.alert("A soma dos numeros é " + soma2) //mostrando a soma
+
+        //Fazendo isso de uma forma mais simples, analisando o tipo de numero(real,inteiro)
+
+        var n5 = Number(prompt("digite um numero"))
+        var n6 = Number(prompt("digite um numero"))
+        soma3 = n5 + n6
+        alert("A soma dos numeros simplificados é " + soma3)
+        alert(`A soma entre ${n5} e ${n6} é ${soma}`)
+
+        //Para converter de numero para string 
+        String(n)
+        n.toString(n)
+        //exemplo
+        alert("A string da soma é " + String(soma3))
+       
+ 
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
