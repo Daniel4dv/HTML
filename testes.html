@@ -1,68 +1,41 @@
 <!DOCTYPE html>
-<!-- 
-Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4
--->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;3&lt;3</title>
-</head>
+    <title>Document</title>
 
+    <style>
+        div.container{
+            background-color: coral;
+            display:flex; /*Desliga a quebra de linha automatica, alinhando os itens do container*/
+            flex-direction:row; /*DETERMINA A DIREÇÃO (ROW/COLUMN) E O ALINHAMENTO (DEFAULT/REVERSE)*/
+            width: 350px;
+            flex-wrap: wrap; /*determina se sera adaptado dinamicamente ou nao, e se sera quebrado inversamente*/
+            justify-content: space-around; /*forma como o conteudo do container vai ser alinhado/centrazlizado */
+            
+        }
+        
+        div.item{
+            border: 1px solid black;
+            background-color: lightblue;
+            /*flex:auto;*/  /*adapta automaticamente o tamanho dos itens para o contaiiner */
+            text-align:center;
+            padding: 10px;
+            width: 55px;
+            
+        }
+
+    </style>
+</head>
 <body>
-    <div id="conteudo">
-        <h2>Bora pra Nova Lima hj?</h2>
-        <div style="margin: auto;width: 170px;">
-            <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM</button>
-            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
-        </div>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
     </div>
 </body>
-<style>
-    #conteudo {
-        background: #ff7a7a;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 10px;
-        text-align: center;
-        font-family: sans-serif;
-    }
-
-    .btn {
-        background: black;
-        color: white;
-        border: none;
-        padding: 10px;
-        width: 80px;
-        border-radius: 5px;
-    }
-</style>
-
-<script>
-    function sim() {
-        alert("Sabia que ia querer gatinha");
-        // redireciona para um URL após clicar no SIM
-        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
-    }
-
-    function desvia(btn) {
-        // btn declarado na função
-        btn.style.position = 'absolute';
-        btn.style.bottom = geraPosicao(10, 90);
-        btn.style.left = geraPosicao(10, 90);
-        console.log('opa, desviei...');
-    }
-
-    function geraPosicao(min, max) {
-        return (Math.random() * (max - min) + min) + "%";
-    }
-
-</script>
-
-
 </html>

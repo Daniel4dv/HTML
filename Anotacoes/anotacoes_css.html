@@ -1260,13 +1260,48 @@ print,screen
 <a href="https://fonts.google.com/icons?icon.size=24&icon.color=%23e8eaed">Google icons</a>
 
 
+<h1>Trabalhando com flexbox</h1>
 
+<style>
+    div.container{
+        background-color: coral;
+        display:flex; /*Desliga a quebra de linha automatica, alinhando os itens do container*/
+        flex-direction:row; /*DETERMINA A DIREÇÃO (ROW/COLUMN) E O ALINHAMENTO (DEFAULT/REVERSE)*/
+        flex-wrap: wrap; /*determina se sera adaptado dinamicamente ou nao, e se sera quebrado inversamente*/
+        flex-flow: row wrap; /*short hand para usar directionm e wwrap na mesma linha*/
+        width: 350px;
+        
+    }
+    
+    div.item{
+        border: 1px solid black;
+        background-color: lightblue;
+        /*flex:auto;*/  /*adapta automaticamente o tamanho dos itens para o contaiiner */
+        text-align:center;
+        padding: 10px;
+        width: 55px;
+        
+    }
 
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+</div>
 
+<p>Nessa div, usamos o flex-direction, flex-wrap, e flex: auto para personalziarr o comportamento de divs em sua div pai</p>
+<h1>Justify-content</h1>
+<p>Conjuntoo de parametros que ajuda a determinar a posicao final dos itens no container:</p>
 
-
-
-
+<code>space-betwen (alinha o espaço entre os itens de forma igual, alinhando nas duas extremidades) </code> <br> <br>
+<code>space-enevlyy  (alinha igualmente também, mas sem colar as extremidades)</code><br> <br>
+<code>space-around  (divide o container em divs e centraliza cada item em cada respectiva div)</code><br>
 
 
 
