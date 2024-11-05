@@ -6,24 +6,42 @@
     <title>Document</title>
 
     <style>
+
+        
+        
         div.container{
             background-color: coral;
             display:flex; /*Desliga a quebra de linha automatica, alinhando os itens do container*/
             flex-direction:row; /*DETERMINA A DIREÇÃO (ROW/COLUMN) E O ALINHAMENTO (DEFAULT/REVERSE)*/
-            width: 350px;
+            
+            height: 200px;
             flex-wrap: wrap; /*determina se sera adaptado dinamicamente ou nao, e se sera quebrado inversamente*/
-            justify-content: space-around; /*forma como o conteudo do container vai ser alinhado/centrazlizado */
+            justify-content: space-between; /*forma como o conteudo do container vai ser alinhado/centrazlizado */
+            align-items: center /*start/center/end*/
+            
+        }
+        div.container2{
+            background-color: coral;
+            height: 700px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+            justify-content: space-evenly;
             
         }
         
         div.item{
             border: 1px solid black;
             background-color: lightblue;
-            /*flex:auto;*/  /*adapta automaticamente o tamanho dos itens para o contaiiner */
+            /*flex:auto;  /*adapta automaticamente o tamanho dos itens para o contaiiner */
             text-align:center;
             padding: 10px;
             width: 55px;
+            ;
             
+               
         }
 
     </style>
@@ -37,5 +55,14 @@
         <div class="item">E</div>
         <div class="item">F</div>
     </div>
+    <br><br>
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+       
+    </div>
+
+    
 </body>
 </html>
